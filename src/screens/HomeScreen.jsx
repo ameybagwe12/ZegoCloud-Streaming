@@ -30,6 +30,7 @@ export default function HomeScreen() {
       <TextInput
         placeholder="Enter the Live ID. e.g. 6666"
         style={[styles.input]}
+        placeholderTextColor={'black'}
         onChangeText={text => setLiveID(text.replace(/[^0-9A-Za-z_]/g, ''))}
         maxLength={4}
         value={liveID}></TextInput>
@@ -84,6 +85,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     marginLeft: 35,
     marginBottom: 20,
+    color: 'black',
   },
   userID: {
     fontSize: 14,
